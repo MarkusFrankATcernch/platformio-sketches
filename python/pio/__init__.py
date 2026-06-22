@@ -22,7 +22,7 @@ global PROJECTS_DIR
 
 HOME = os.environ['HOME']
 SKETCHES = HOME + os.sep + 'Arduino/sketches'
-TEMPLATE_DIR = SKETCHES + os.sep + 'platformio'
+TEMPLATE_DIR = os.path.split(os.path.split(os.path.split(__file__)[0])[0])[0]
 PROJECTS_DIR = HOME + os.sep + 'Documents/PlatformIO/Projects'
 
 # ==============================================================================
